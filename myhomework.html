@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siers Latvijā</title>
+</head>
+<body>
+    <div class="header">
+        <?php include 'header.php';?>
+    </div>
+
+    <nav class="topnav">
+        <ul>
+            <li><a href="article2.html" target="_blank">Sieru vēsture</a></li>
+            <li><a href="article3.html" target="_blank">Sieru veidi</a></li>
+            <li><a href="article5.html" target="_blank">Siera izgatavošana</a></li>
+        </ul>
+    </nav>
+          
+    <div class="login-container">
+        <label for="uname"><b>Lietotājvārds</b></label>
+        <input type="text" placeholder="Ievadi lietotājvārdu" name="uname" required>
+          
+        <label for="psw"><b>Parole</b></label>
+        <input type="password" placeholder="Ievadi paroli" name="psw" required>
+          
+        <button type="submit">Ienākt</button>
+    </div>
+    
+    <div class="container">
+        <h2>Jaunumi</h2>
+            <div class="column">
+                <h4>Latvijas tirgū ir jauns siers!</h4>
+                <p>Uzņēmums “Madonas Uguns siers” mēģina Latvijas siera tirgū ieviest jaunu, Alpos noskatītu siera un siera ēšanas veidu – <em>rakletes sieru</em>.“Ja nebūtu pandēmijas, jau pirms gada mēs būtu spējuši “uzspridzināt” Latviju un pasauli ar savu sieru,” uzskata uzņēmuma “Madonas Uguns siers” dibinātāja Lāsma Adamoviča. 
+                Pērn pavasarī dibinātais uzņēmums jau paspējis piedalīties globāla mēroga izstādē “The Speciality Food Festival” Apvienotajos Arābu Emirātos, kur atradis savu produktu izplatītāju pasaulē un jau tuvāko mēnešu laikā gatavojas sākt eksportu.</p>
+            </div>
+
+            <div class="column">
+                <h4>Jelgavas siera svētki</h4>
+                <p>28.augustā Jelgavā norisinājās Siera Klubs rīkotie siera svētki! Kur plaši tika pārstāvēti piena un siera ražotāji Latvijā. Straupe - šo svētku ģenerālsponsors! Tas uzliek atbildību un par godu šiem svētkiem tika siets 70 kg Jāņu siers!</p>
+            </div>
+
+            <div class="column">
+                <h4>Katrs Latvijas iedzīvotājs gadā apēd vidēji septiņus kilogramus siera</h4>
+                <p>Saulgriežu laikā siera patēriņš ievērojami palielinās. Protams, visvairāk tiek pirkts tradicionālais Jāņu siers, bet arī pēc citiem sieriem pieprasījums kāpj. Kopumā 2020. gads Latvijas siera ražotājiem bijis veiksmīgs un tiem izdevies kāpināt ražošanas apjomu, kā arī vairāk eksportēt.</p>
+            </div>
+    </div>
+
+	<div class="form-container">
+		<form action="/saveNewspaper" method="POST">
+			<h2>Atsūti mums savu siera recepti</h2>
+
+		    <div class="your-name">
+			    <label class="input" for="name">Vārds</label>
+			    <input class="input" type="text" placeholder="Tavs vārds" id="name" required>
+		    </div>
+		
+		    <div>
+			    <textarea placeholder="Pastāsti par savu recepti..."></textarea>
+		    </div>
+
+            <h4>Izvēlies receptes veidu:</h4>
+
+		    <div class="custom-select">
+			    <select>
+				    <option value="Brokastis">Brokastis</option>
+				    <option value="Pusdienas">Pusdienas</option>
+				    <option value="Vakarinas">Vakariņas</option>
+				    <option value="Deserti">Deserti</option>
+			    </select>
+		    </div>
+		
+		    <div>
+			    <input type="submit" value="Apstiprināt">
+		    </div>
+
+		</form>
+	</div>
+</body>
+</html>
